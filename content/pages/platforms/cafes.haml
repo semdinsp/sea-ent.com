@@ -1,0 +1,17 @@
+Categories: cafes
+Template: home
+Summary: Gaming Cafe systems
+
+.container
+  .row
+    .col-md-9
+      %h1 Gaming Cafes
+      :markdown
+        blah blah
+
+    .col-md-3
+      = haml :product_menu, :layout => false
+
+  .row
+    .col-offset-9.col-md-3
+      = haml :learn_more, :layout => false

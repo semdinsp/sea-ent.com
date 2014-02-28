@@ -1,0 +1,50 @@
+Title: SEA Entertainment Limited
+Template: home
+Link text: Summary
+
+.container
+  .row
+    %h1 
+      Platforms Summary
+  .row
+    %section.jumbotron
+      %section.hero-unit
+        %section.lucky1
+          = haml :marketing_tags, :layout => false
+  .row
+    .col-md-3
+      %h2 Scratch Cards
+      :markdown
+        * Paper and computer based scratch card solutions
+        * Mathematics to develop scratch cards 
+        * Support and Training
+        * Distribution Management
+        * Reporting 
+    .col-md-3
+      %h2 Gaming Cafes
+      :markdown
+        * Small gaming cafes 10 -100 terminals	
+        * Available as full standalone or service provider package
+        * Unique terminals with ticket in/out and cash out solutions
+        * Complete reporting system and auditing for regulators
+    .col-md-3
+      %h2 Lotteries
+      :markdown
+        * Solutions for tickets and mobile lotteries
+        * Distribution Management
+        * Our own terminals and hardware developments
+        * Diverse payout strategies and mathematical solutions
+    .col-md-3
+      %h2 Our Strengths
+      :markdown
+        + Emerging market gaming license acquisition
+        + [Partner](clients) development
+        + [Turnkey](platforms) solution
+        + [Scratch Card](/platforms/scratch) and Lottery data generation
+        + [Cafes](/platforms/cafes) for both gaming and computer based scratch
+  .row
+    .col-md-9
+      %section.lucky2
+        = haml :sea_users, :layout => false
+
+

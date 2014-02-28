@@ -1,0 +1,25 @@
+Categories: products
+Template: home
+Summary: Product list
+
+.container
+  .row
+    .col-md-8
+      %h1 Platforms
+      :markdown
+        A summary of the various products and solutions we deliver. 
+
+        #### Technlogy
+        We use [Mathematica](http://wolfram.com) and [Ruby](http://ruby-lang.org) for website and integrated performance reporting for most of our technology development.  Some of our small terminal projects use RaspberryPi devices for inexpensive terminal solutions.
+        #### Terminals
+        We design and manufacture terminals with leading contract manufacturers in Taiwan
+        #### Cafes
+        We deploy cafes in various configurations with both gaming software and scratch card s/w.
+        #### Scratch Cards
+        We have the capability to design, develop and print scratch cards.  Beyond the normal capabilities of an operator, we have additionally experience in distribution networks and mathematics to develop innovative scratch card games.
+        #### Lotteries
+        We run 4D and other lotteries on our own proprietary software.
+    .col-md-4
+      = haml :product_menu, :layout => false
+      = haml :learn_more, :layout => false
+

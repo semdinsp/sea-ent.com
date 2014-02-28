@@ -1,0 +1,21 @@
+Categories: lottery
+Template: home
+Summary: Lottery Application
+
+.container
+  .row
+    .col-md-9
+      %h1 Lottery Application
+      :markdown
+        We have extensive experience running lotteries.  We have a lottery application for 4D which can be easily deployed and extended to other lottery format (6/36). This is a scalable solution which can support 1,000,000 entries per day.  We can deliver the solution so that it is integrated with specialized lottery printing terminals at an extremely low cost.
+
+        Our system uses high quality random number generators to ensure fair treatment for the end consumer. We have also developed end consumer sites such as [Lucky SMS](http://tl.estormtech.com) and real time [dashboards](http://tl-sms-dashboard-public.herokuapp.com/lotto). We have additional applications for the operator to manage the solution including real time dashboard tracking revenue. Please [contact us](/contact) for further details on the operator portion of the solution.
+
+        As this is a specialised solution and generally requires a government license to run please contact us directly for further information.  We can also provide consulting in this area to help ensure that the solution is fair to the end consumer.
+
+    .col-md-3
+      = haml :product_menu, :layout => false
+
+  .row
+    .col-offset-9.col-md-3
+      = haml :learn_more, :layout => false

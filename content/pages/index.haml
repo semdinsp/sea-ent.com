@@ -1,0 +1,28 @@
+Title: SEA Entertainment Limited
+Template: home
+Layout: toppage
+Link text: Home
+
+.container
+  .col-md-3
+    %a(class="brand" href="/summary")
+      %img( src="/attachments/estormcrm.jpg" width=23 height=23 alt='estorm logo')
+      = @heading
+
+%section.jumbotron
+  %section.lucky1
+    = haml :marketing_tags, :layout => false
+
+.container
+  .row
+    .col-md-offset-4.col-md-5
+      %a(href="/summary" class="btn btn-info btn-large") 
+        Enter the website to see the details
+  .row
+    .col-md-7
+      %section.lucky2
+        = haml :sea_users, :layout => false
+  
+
+  
+

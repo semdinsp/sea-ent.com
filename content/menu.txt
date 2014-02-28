@@ -1,0 +1,10 @@
+/
+summary
+platforms
+  platforms/terminals
+  platforms/scratch
+  platforms/tms
+  platforms/cafes
+  platforms/lottery
+clients
+contact

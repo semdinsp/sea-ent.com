@@ -1,0 +1,21 @@
+Categories: tms
+Template: home
+Summary: Ticket/Distributor Management System
+
+.container
+  .row
+    .col-md-9
+      %h1 TMS - Ticket/Distributor Management System
+      :markdown
+        Extending our ability in scratch card data we have developed a system to track items delivered to a distributor and manage the entire distribution chain and sub dealers.  This can track returns, locations of the distributor/point of sale and other aspects of channel management.
+
+        We provide this a hosted solution based on monthly subscription model.  We are working to extend this to GPRS connected devices so that paper tickets can be created at the point of sale. This is currently active in Laos where it is managing millions of tickets and several ticket types
+
+        We have a trial system available for perusal at [TMS](http://test.tms.sg.estormtech.com).  For login details please [contact us](/contact).
+
+    .col-md-3
+      = haml :product_menu, :layout => false
+
+  .row
+    .col-offset-9.col-md-3
+      = haml :learn_more, :layout => false

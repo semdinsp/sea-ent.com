@@ -1,0 +1,49 @@
+Categories: contact
+Template: home
+Summary: Test styles
+
+%h1 Test
+:markdown
+  Our Address:
+  
+  blah blah
+  
+  Legal: Singapore Company Registration: 200904977M
+
+
+
+
+%section.intro
+  %heading
+    %h1 Summary
+  :markdown
+    Increase sales and never lose track of customer leads. With EstormTech's process oriented approach to customer management tracking leads and sales activities have never been easier.
+
+    Scratch card data generation and management of scratch cards at the distributor and point of sale level.
+
+    No hidden costs using our affordable monthly subscriptions.  (Our charges are likely less than the cost of your mobile phone bill)
+
+    Distributor and inventory management (managing products at the distributor level)
+
+    Save time and money with a single unified view of customer activities, inventory management including management of time based services.
+
+
+	%section.users
+	  %heading
+	    %h1 
+	      Who's using Estorm?
+	      %ul
+	        %li
+	          %blockquote
+	            “Estorm’s underlying technology is as robust and versatile as any solution in this space. The difference has been the support and ‘can do’ attitude which has enabled SmartRoam to have a single source of truth of our customers, from acquisition through to retention and support.”
+	            %cite
+	              Charles Tidswell,
+	              %a(href="http://chattimeapp.com") Chattime.com
+	          %li
+	            %blockquote
+	              “Estorm's solution allows us to offer on demand crm to our customers and billing integration with our prepaid platform and our customer's mobile phones.”
+	              %cite
+	                Frederic,
+	                %a(href="http://indosat.com") Indosat.com
+
+	%section.articles= article_summaries(latest_articles)
