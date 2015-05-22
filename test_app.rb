@@ -42,9 +42,9 @@ class EstormTest < Test::Unit::TestCase
           #assert_equal last_response.body.includes? 'Ficonab Pte. Ltd.'
             }
    end
-   def test_products_pages
+   def test_platform_pages
    
-      pagelist=["terminals","cafes","lottery","scratch","tms"]
+      pagelist=["terminals","cafes","lottery","scratch","tms","sms"]
       puts "testing product pages: #{pagelist.inspect}"
       pagelist.each { |page| 
            get "platforms/#{page}"
@@ -52,6 +52,16 @@ class EstormTest < Test::Unit::TestCase
            #assert_equal last_response.body.includes? 'Ficonab Pte. Ltd.'
              }
     end
+    def test_project_pages
+   
+       pagelist=["batugade"]
+       puts "testing project pages: #{pagelist.inspect}"
+       pagelist.each { |page| 
+            get "projects/#{page}"
+            assert last_response.ok?, "projects/#{page} not found"
+            #assert_equal last_response.body.includes? 'Ficonab Pte. Ltd.'
+              }
+     end
    
   #def test_it_says_hello_to_a_person
   #  get '/', :name => 'Simon'

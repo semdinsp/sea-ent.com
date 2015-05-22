@@ -1,7 +1,10 @@
 /
 summary
+projects
+  projects/batugade
 platforms
   platforms/terminals
+  platforms/sms
   platforms/scratch
   platforms/tms
   platforms/cafes

@@ -1,0 +1,25 @@
+Categories: cafes
+Template: home
+Summary: Batugade Duty Free
+
+.container
+  .row
+    .col-md-9
+      %h1 Batugade Duty Free
+      :markdown
+        We are presently building out a duty free shop at the land border crossing in Timor Leste with Indonsia.  This is the only land border crossing in Indonesia.
+      
+      %h2 Shop Design
+      %h3
+        .col-xs-8
+          Outside View
+          %img.img-responsive{:src=>"attachments/shopfront.jpg" , :alt=>"Shop"}
+          Inside View
+          %img.img-responsive{:src=>"attachments/shopvert.jpg", :alt=>"Shop"}
+
+    .col-md-3
+      = haml :project_menu, :layout => false
+      = haml :platform_menu, :layout => false
+      = haml :learn_more, :layout => false
+      
+
