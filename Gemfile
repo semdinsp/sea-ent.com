@@ -9,7 +9,3 @@ gem 'puma'
 gem 'nesta' #, '0.9.13'
 gem 'rack-test'
 
-
-
-
-# gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'
