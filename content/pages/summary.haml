@@ -11,11 +11,13 @@ Link text: Summary
       %section.hero-unit
         %section.lucky1
           = haml :marketing_tags, :layout => false
-  .row
-    .well
+  .callout
+    .callout-content
       %h2 Timor Investment Opportunity
-      :markdown
-         The attached file summarizes our projects in Timor Leste for which are looking for financial partners. [Investment Summary](attachments/Timor-Investment-v7-short.pdf)
+      %h3 The attached file summarizes our projects in Timor Leste for which we are looking for financial partners.
+    .callout-secondary
+      %a(href="/attachments/Timor-Investment-v7-short.pdf" class="btn btn-info btn-large") 
+        Download pdf file
   .row
     .col-xs-3
       %h2 Scratch Cards
