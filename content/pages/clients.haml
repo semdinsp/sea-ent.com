@@ -4,30 +4,44 @@ Summary: Client list
 
 
 
-.container
-  %h1 Clients and Partners
+.container-fluid
   .row
-    .col-md-9
-      #carousel-myClientCarousel(class="carousel slide" data-ride="carousel" data-interval=4000)
-        %ol.carousel-indicators
-          %li(data-target="#carousel-myClientCarousel" data-slide-to="0" class="active")
-          - 1.upto(3) do |i|
-            %li(data-target="#carousel-myClientCarousel" data-slide-to="#{i}" )
-        .carousel-inner
-          - [{:link => "http://www.fiestahms.com",:itemstate=>"active", :caption =>"Fiesta",:image => "eastern.jpg", :text =>"Fiesta is our partner for casino management software and cash handling"}, {:link => "http://sea-ent.com", :itemstate=>"", :caption =>"Cambodia", :image => "smartroam.jpg", :text =>"In Cambodia we have partnered with SP Consulting for license acquisition"}, {:link => "http://www.simuong.com",:itemstate=>"", :caption =>"Laos", :image => "adfip.jpg", :text =>"In Laos we are partnered with the Simong Group, A large entreprenuerial developer of Dams and Hotels."}, {:link => "http://www.bni.com",:itemstate=>"", :caption =>"Timor" , :image => "bni.jpg", :text =>"In Timor we run a sms lottery and are developing a network of Gaming Cafes in partnership with leading business entrepreneurs"},].each do |i|
-            .item{:class=> "#{i[:itemstate]}" }
-              %img{:src=>"/attachments/partners/#{i[:image]}",  :alt=>"" }
-              .container
-                .carousel-caption
-                  %h2 #{i[:caption]}
-                  %p.lead
-                    #{i[:text]}
-                  %a(href="#{i[:link]}" class="btn btn-info btn-large") 
-                    Visit #{i[:caption]}
-        %a{:class=>"left carousel-control", :href=>"#carousel-myClientCarousel", "data-slide"=>"prev"}
-          <
-        %a{:class=>"right carousel-control" ,:href=>"#carousel-myClientCarousel", "data-slide"=>"next"}
-          >
+    .col-md-offset-1.col-sm-9
+      %h1 Clients and Partners
+      .col-sm-4
+        %ul.featured-list.featured-list-bordered
+          %li.m-b-md
+            .featured-list-icon
+              %span.icon.icon-price-tag
+            %h3 Midpac
+            %p
+              Mid Pacific Distributors Inc is our distribution and wholesale business partner.
+              %a(href="http://wwww.midpacguam.com")
+                More details
+          %li.m-b-md
+            .featured-list-icon
+              %span.icon.icon-shop
+            %h3 SP Consulting
+            %p
+              SP Consulting provides market support in Cambodia.
+      .col-sm-4
+        %ul.featured-list.featured-list-bordered
+          %li.m-b-md
+            .featured-list-icon
+              %span.icon.icon-old-mobile
+            %h3 Telkomcel
+            %p
+              Telkomcel is our partner in both Timor Leste and Indonesia where we have content partner contracts.
+              %a(href="http://wwww.telkomcel.co.id")
+                More details
+          %li.m-b-md
+            .featured-list-icon
+              %span.icon.icon-users
+            %h3 Koni
+            %p
+              Koni is the Indonesia sports athletics organization who is a partner in Indoniesia.
+              %a(href="http://wwww.koni.co.id")
+                More details
     .col-md-3
       = haml :product_menu, :layout => false
       = haml :learn_more, :layout => false
