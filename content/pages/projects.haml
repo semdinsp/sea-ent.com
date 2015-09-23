@@ -6,18 +6,46 @@ Summary: Projects
   .row
     .col-md-8
       %h1 Projects
-      :markdown
+      %p
         Ongoing projects include the following: 
-
-        #### [Sea Duty Free](www.seadutyfree.com)
-        ##### [Batugade](projects/batugade)
-        Timor Leste has the only land border crossing in Indoneisa where we have a duty free license and a hotel license.  [images](projects/batugade).  Our store in Batugade will open 2015 and Salele will likely open Dec 2015.
-        ##### Airport
-        We plan to launch the Dili Airport duty free before Q1 2016.
-        #### Laos
-        In discussion for techology deployments based on our proprietary terminal.
-        #### Indonesia
-        We have an agreement to help support the ASEAN games in 2018 by running sms and sratch card funding projects.  We are operating this in partnership with XL, 7-11 stores, Telkcomcel and Indosat. This is primarily a [corporate social responsibility](http://www.koni-donasi.com) project which builds relationships for future business in Indonesia.
+      .col-xs-4
+        %h3
+          %a(href="http://www.seadutyfree.com")
+            Sea Duty Free
+        %h4
+          %a(href="projects/batugade")
+            Batugade
+        %p 
+          Timor Leste has the only land border crossing in Indoneisa where we have a duty free license and a hotel license   
+          %a(href="projects/batugade")
+            (see images).
+          Our store in Batugade will open 2015 and Salele will likely open Dec 2015.
+        %h4  Airport
+        %p 
+          We plan to launch the Dili Airport duty free before Q1 2016.
+      .col-xs-4
+        %h3
+          Food Production
+        %p 
+          Our plans include the production of local products including timor coffee and timor hot sauce.  
+        %img.img-responsive(data-action="zoom"  src="/attachments/hotsauce.png" alt='estorm logo')
+      .col-xs-4
+        %h3
+          Tobacco Production and Manufacturing
+        %p 
+          We hope to use local tobacco to manufacture cigarettes for a population base of 1.3 milion of which more than 60% smoke.  We would use the profits from cigarette manufactuing to support other local product development.
+        %img.img-responsive(data-action="zoom"  src="/attachments/libro.jpg" alt='estorm logo')
+      .col-xs-4
+        %h3 Laos
+        %p
+          In discussion for techology deployments based on our proprietary terminal.
+      .col-xs-4
+        %h3 Indonesia
+        %p
+          We have an agreement to help support the ASEAN games in 2018 by running sms and sratch card funding projects.  We are operating this in partnership with XL, 7-11 stores, Telkcomcel and Indosat. This is primarily a
+          %a(href="http://www.koni-donasi.com")
+            corporate social responsibility
+          project which builds relationships for future business in Indonesia.
     .col-md-4
       = haml :project_menu, :layout => false
       = haml :learn_more, :layout => false
