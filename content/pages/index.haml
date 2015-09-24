@@ -4,21 +4,29 @@ Layout: toppage
 Link text: Home
 
 .container
-  .col-md-3
+  .col-xs-4
     %a(class="brand" href="/summary")
       %img( src="/attachments/estormcrm.jpg" width=23 height=23 alt='estorm logo')
       = @heading
-
-.block.text-center
-  %h1.block-title
-    Sea Entertainment Limited
-  .callout
-    .callout-content
-      %section.lucky1
-        = haml :marketing_tags, :layout => false
-    .callout-secondary
-      %a(href="/summary" class="btn btn-info btn-large") 
-        More details
+  .col-xs-10
+    %hr
+.row
+  .col-xs-10
+    .block.text-center
+      .block-foreground
+        %h1.block-title(style="color:white")
+          %strong
+            Sea Entertainment Limited
+      .block-background
+        %iframe(frameBorder="0" src="attachments/blockback.jpg")
+    .callout
+      .callout-content
+        %section.lucky1
+          = haml :marketing_tags, :layout => false
+      .callout-secondary
+        %a(href="/summary" class="btn btn-info btn-large") 
+          More details
+    /.img.img-response(src="attachments/blockback.jpg")
   
 /%section.jumbotron
 /  %section.lucky1
