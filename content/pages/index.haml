@@ -6,7 +6,7 @@ Link text: Home
 .container
   .col-xs-4
     %a(class="brand" href="/summary")
-      %img( src="/attachments/estormcrm.jpg" width=23 height=23 alt='estorm logo')
+      %img( src="/attachments/seaentlogo.png" width=23 height=23 alt='sea ent logo')
       = @heading
   .col-xs-10
     %hr
@@ -22,7 +22,10 @@ Link text: Home
     .callout
       .callout-content
         %section.lucky1
-          = haml :marketing_tags, :layout => false
+          .col-xs-2
+            %img.img-responsive( src="/attachments/seaentlogo.png"  title='sea ent logo')
+          .col-xs-8
+            = haml :marketing_tags, :layout => false
       .callout-secondary
         %a(href="/summary" class="btn btn-info btn-large") 
           More details
