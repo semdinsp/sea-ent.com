@@ -5,7 +5,7 @@
         %span.sr-only Toggle Navigation
         - 1.upto(3) do |i|
           %span.icon-bar
-      %a(class="navbar-brand" href="/")
+      %a(class="navbar-brand" href="#")
         .span
           %img( src="/attachments/seaentlogo.png" width=23 height=23 alt='estorm logo')
           %h5
@@ -13,5 +13,3 @@
               = @heading
     .navbar-collapse.collapse(id="navbar-ex-collapse")    
       - display_menu(@menu_items, :class => "nav nav-bordered h4", :levels => 1)
-
-
