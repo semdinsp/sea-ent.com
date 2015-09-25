@@ -2,11 +2,11 @@
 %br
 %br
 .footer
-  #accordion.panel-group
+  #accordionFoot.panel-group
     .panel.panel-default
       .panel-heading
         %h5.panel-title
-          %a{:class=>"accordion-toggle", "data-toggle"=>"collapse" , "href"=>"#" , "data-parent"=>"#accordian", "data-target"=>"#collapseFoot"}
+          %a{:class=>"accordion-toggle", "data-toggle"=>"collapse", "data-parent"=>"#accordianFoot", "data-target"=>"#collapseFoot"}
             Show Version and Copyright
       #collapseFoot.panel-collapse.collapse
         .panel-body
@@ -17,10 +17,8 @@
           %p
             %small BVI Company registration: 1811240
 
-
-
 %script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-%script(type="text/javascript" src="/bootstrap/dist/js/bootstrap.js")
+%script(type="text/javascript" src="/bootstrap/dist/toolkit.js")
 %script(type="text/javascript" src="/javascripts/application.js")
 / %script(type="text/javascript" src="http://yandex.st/highlightjs/7.3/highlight.min.js")
 /  :javascript
