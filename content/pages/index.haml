@@ -10,13 +10,16 @@ Link text: Home
       = @heading
   .col-xs-10
     %hr
+    %h1.text-primary.text-center
+      %strong
+        Sea Entertainment Limited
 .row
   .col-xs-10
     .block.text-center
       .block-foreground
-        %h1.block-title(style="color:white")
-          %strong
-            Sea Entertainment Limited
+        /%h1.block-title(style="color:white")
+        /  %strong
+        /    Sea Entertainment Limited
       .block-background(style="background-image: url('attachments/blockback.jpg');")
         / %iframe(frameBorder="0" src="attachments/blockback.jpg")
         
@@ -41,6 +44,14 @@ Link text: Home
     .col-md-7
       %section.lucky2
         = haml :sea_users, :layout => false
+
+.row
+  .col-xs-10
+    .block
+      %h2.block-title 
+        %a(href="/summary" class="btn btn-info btn-large") 
+          Key Projects
+      = haml :keyprojects, :layout => false
   
 
   

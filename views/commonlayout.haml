@@ -17,9 +17,8 @@
   /%link(href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen")
   / new bootstrap v3 %link(href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen")
   /%link(href="/css/bootstrap_customization.css" media="screen" rel="stylesheet") 
-  %link(href="/css/firstpage.css" media="screen" rel="stylesheet") 
-  %link(href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
-  %link(href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css')
+  / %link(href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+  / %link(href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css')
   <!--icons by scott -->
   %link(rel="apple-touch-icon" href="/attachments/icons/estormipad72.png"  type="image/png" )
   %link(rel="shortcut icon" href="/attachments/icons/favicon.ico" type="image/vnd.microsoft.icon" )
@@ -29,17 +28,3 @@
   = haml :analytics, :layout => false
   
   /- if Nesta::App.production?  to review later by sctt
-  - if false
-    :plain
-      <script type="text/javascript" id="inspectletjs">
-        var __insp = __insp || [];
-        __insp.push(['wid', 1962715361]);
-        (function() {
-          function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspect_nojquery/1962715361.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
-          if (window.attachEvent){
-            window.attachEvent('onload', __ldinsp);
-          }else{
-            window.addEventListener('load', __ldinsp, false);
-          }
-        })();
-      </script>
