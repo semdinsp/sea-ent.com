@@ -1,0 +1,8 @@
+%p Register to download our project summary.
+%form.form-inline{:action=>"/downloadfile"  ,:method => "post" }
+  .form-group
+    %label(for="email")
+      Email
+    %input(type="email" value="jane.doe@example.com" name="email" class="form-control" id="email") 
+  %button(type="submit" class="btn btn-success")
+    Send download details

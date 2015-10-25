@@ -15,10 +15,7 @@ Link text: Summary
   .callout
     .callout-content
       %h2 Timor Investment Opportunity
-      %h3 The attached file summarizes our projects in Timor Leste for which we are looking for financial partners.
-    .callout-secondary
-      %a(href="/attachments/Timor-Investment-v7-short.pdf" class="btn btn-info btn-large") 
-        Download pdf file
+      = haml :timor_register, :layout => false
   .row
     = haml :keyprojects, :layout => false
   .row
