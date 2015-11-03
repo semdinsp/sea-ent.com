@@ -1,58 +1,61 @@
 Title: SEA Entertainment Limited
 Template: home
-Layout: toppage
 Link text: Home
 
+/ Layout: toppage
+
+/.container
+/  .col-xs-4
+/    %a(class="brand" href="/summary")
+/      %img( src="/attachments/seaentlogo.png" width=23 height=23 alt='sea ent logo')
+/      = @heading
+/  .col-xs-10
+/    %hr
+/    %h1.text-primary.text-center
+/      %strong
+/        Sea Entertainment Limited
 .container
-  .col-xs-4
-    %a(class="brand" href="/summary")
-      %img( src="/attachments/seaentlogo.png" width=23 height=23 alt='sea ent logo')
-      = @heading
-  .col-xs-10
-    %hr
-    %h1.text-primary.text-center
-      %strong
-        Sea Entertainment Limited
-.row
-  .col-xs-10
-    .block.text-center
-      .block-foreground
-        /%h1.block-title(style="color:white")
-        /  %strong
-        /    Sea Entertainment Limited
-      .block-background(style="background-image: url('attachments/blockback.jpg');")
-        / %iframe(frameBorder="0" src="attachments/blockback.jpg")
+  .row
+    .col-xs-10
+      .block.text-center
+        .block-foreground
+          /%h1.block-title(style="color:white")
+          /  %strong
+          /    Sea Entertainment Limited
+        .block-background(style="background-image: url('attachments/blockback.jpg');")
+          / %iframe(frameBorder="0" src="attachments/blockback.jpg")
         
-    .callout
-      .callout-content
-        %section.lucky1
-          .col-xs-2
-            %img.img-responsive( src="/attachments/seaentlogo.png"  title='sea ent logo')
-          .col-xs-8
-            = haml :marketing_tags, :layout => false
-      .callout-secondary
-        %a(href="/summary" class="btn btn-info btn-large") 
-          More details
-    /.img.img-response(src="attachments/blockback.jpg")
+      .callout
+        .callout-content
+          %section.lucky1
+            .col-xs-2
+              %img.img-responsive( src="/attachments/seaentlogo.png"  title='sea ent logo')
+            .col-xs-8
+              = haml :marketing_tags, :layout => false
+        .callout-secondary
+          %a(href="/summary" class="btn btn-info btn-large") 
+            More details
+      /.img.img-response(src="attachments/blockback.jpg")
   
-/%section.jumbotron
-/  %section.lucky1
-/    = haml :marketing_tags, :layout => false
+  /%section.jumbotron
+  /  %section.lucky1
+  /    = haml :marketing_tags, :layout => false
+
+
+
+  .row
+    .col-xs-10
+      .block
+        %h2.block-title 
+          %a(href="/summary" class="btn btn-info btn-large") 
+            Key Projects
+        = haml :keyprojects, :layout => false
 
 .container
   .row
     .col-md-7
       %section.lucky2
-        = haml :sea_users, :layout => false
-
-.row
-  .col-xs-10
-    .block
-      %h2.block-title 
-        %a(href="/summary" class="btn btn-info btn-large") 
-          Key Projects
-      = haml :keyprojects, :layout => false
-  
+        = haml :sea_users, :layout => false  
 
   
 
