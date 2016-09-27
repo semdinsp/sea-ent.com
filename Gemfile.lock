@@ -1,14 +1,14 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.9)
+    RedCloth (4.3.2)
     ficonabses (0.4.4)
     haml (4.1.0.beta.1)
       tilt
     haml-contrib (1.0.0.1)
       haml (>= 3.2.0.alpha.13)
-    httpclient (2.7.1)
-    mini_portile2 (2.0.0)
+    httpclient (2.8.2.4)
+    mini_portile2 (2.1.0)
     nesta (0.11.1)
       RedCloth (~> 4.2)
       haml (>= 3.1)
@@ -18,15 +18,17 @@ GEM
       sass (>= 3.1)
       sinatra (~> 1.4)
       tilt (~> 1.4)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    pkg-config (1.1.7)
     puma (3.4.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rdiscount (2.1.8)
+    rdiscount (2.2.0.1)
     sass (3.4.22)
     sinatra (1.4.7)
       rack (~> 1.5)
